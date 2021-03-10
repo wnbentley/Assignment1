@@ -1,1 +1,10 @@
+For Part2, I created a hybrid quicksort/insertionsort. In part1, of the worst case n^2 sorts, insertionsort runs the quickest, it also matches bubble
+sorts best case time of n. So it seems like an obvious choice. 
+The threshold to switch between quicksorting and insertion sorting was rather high, 15,000, but it was the best case I could find when doing
+testing with the wallclock. Part of this could be the random pivot picking strategy, math.random will take extra time to run over non random pivots, 
+along with all the extra function calls. Also, there are probably still optimizations that could be made to the code. 
+This algro has what should be an average runtime of big theta of (nlogn). The worst case running time should also be (nlogn) as I don't see how 
+n^2 could happen anymore. 
+It also has a space complexity of worstcase of n, due to all the array intilizations. 
+
 
